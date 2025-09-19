@@ -1,0 +1,943 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes eqb1 {
+  0% {
+    height: 6px;
+  }
+
+  50% {
+    height: 26px;
+  }
+
+  100% {
+    height: 6px;
+  }
+}
+
+@keyframes eqb2 {
+  0% {
+    height: 8px;
+  }
+
+  50% {
+    height: 30px;
+  }
+
+  100% {
+    height: 8px;
+  }
+}
+
+@keyframes eqb3 {
+  0% {
+    height: 10px;
+  }
+
+  50% {
+    height: 36px;
+  }
+
+  100% {
+    height: 10px;
+  }
+}
+
+@keyframes eqb4 {
+  0% {
+    height: 8px;
+  }
+
+  50% {
+    height: 28px;
+  }
+
+  100% {
+    height: 8px;
+  }
+}
+
+@keyframes eqb5 {
+  0% {
+    height: 6px;
+  }
+
+  50% {
+    height: 22px;
+  }
+
+  100% {
+    height: 6px;
+  }
+}
+
+@keyframes neonColorCycle {
+  0% {
+    /* Cyan Blue */
+    background: linear-gradient(
+      180deg,
+      rgba(0, 191, 255, 0.98),
+      rgba(0, 191, 255, 0.08)
+    );
+    box-shadow:
+      0 0 12px rgba(0, 191, 255, 0.9),
+      0 18px 48px rgba(0, 191, 255, 0.12),
+      0 0 36px rgba(0, 191, 255, 0.06);
+  }
+
+  20% {
+    /* Green */
+    background: linear-gradient(
+      180deg,
+      rgba(34, 197, 94, 0.98),
+      rgba(34, 197, 94, 0.08)
+    );
+    box-shadow:
+      0 0 14px rgba(34, 197, 94, 0.95),
+      0 20px 52px rgba(34, 197, 94, 0.12),
+      0 0 40px rgba(34, 197, 94, 0.06);
+  }
+
+  40% {
+    /* Red */
+    background: linear-gradient(
+      180deg,
+      rgba(255, 72, 72, 0.98),
+      rgba(255, 72, 72, 0.08)
+    );
+    box-shadow:
+      0 0 14px rgba(255, 72, 72, 0.95),
+      0 20px 52px rgba(255, 72, 72, 0.12),
+      0 0 40px rgba(255, 72, 72, 0.06);
+  }
+
+  60% {
+    /* Orange */
+    background: linear-gradient(
+      180deg,
+      rgba(255, 165, 0, 0.98),
+      rgba(255, 165, 0, 0.08)
+    );
+    box-shadow:
+      0 0 14px rgba(255, 165, 0, 0.95),
+      0 20px 52px rgba(255, 165, 0, 0.12),
+      0 0 40px rgba(255, 165, 0, 0.06);
+  }
+
+  80% {
+    /* Yellow */
+    background: linear-gradient(
+      180deg,
+      rgba(255, 204, 0, 0.98),
+      rgba(255, 204, 0, 0.08)
+    );
+    box-shadow:
+      0 0 14px rgba(255, 204, 0, 0.95),
+      0 20px 52px rgba(255, 204, 0, 0.12),
+      0 0 40px rgba(255, 204, 0, 0.06);
+  }
+
+  100% {
+    /* Back to Cyan Blue */
+    background: linear-gradient(
+      180deg,
+      rgba(0, 191, 255, 0.98),
+      rgba(0, 191, 255, 0.08)
+    );
+    box-shadow:
+      0 0 12px rgba(0, 191, 255, 0.9),
+      0 18px 48px rgba(0, 191, 255, 0.12),
+      0 0 36px rgba(0, 191, 255, 0.06);
+  }
+}
+
+.animate-eqb1 {
+  animation:
+    eqb1 0.9s infinite ease-in-out,
+    neonColorCycle 4s linear infinite;
+}
+
+.animate-eqb2 {
+  animation:
+    eqb2 1s infinite ease-in-out,
+    neonColorCycle 4s linear infinite;
+}
+
+.animate-eqb3 {
+  animation:
+    eqb3 0.85s infinite ease-in-out,
+    neonColorCycle 4s linear infinite;
+}
+
+.animate-eqb4 {
+  animation:
+    eqb4 0.95s infinite ease-in-out,
+    neonColorCycle 4s linear infinite;
+}
+
+.animate-eqb5 {
+  animation:
+    eqb5 1.05s infinite ease-in-out,
+    neonColorCycle 4s linear infinite;
+}
+
+/* Make play overlay more visible */
+.card-play-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Make audio player sliders visible */
+.player-slider {
+  background-image: linear-gradient(90deg, #7c3aed, #3b82f6);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.12);
+  height: 6px;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 9999px;
+}
+
+.player-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  /* Semi-dark blue thumb with subtle highlight and glow for visibility on black sliders */
+  background: radial-gradient(
+    circle at 30% 30%,
+    #bfdbfe 0%,
+    #2563eb 40%,
+    #1e40af 100%
+  );
+  box-shadow:
+    0 4px 12px rgba(37, 99, 235, 0.28),
+    0 0 20px rgba(37, 99, 235, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.player-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #bfdbfe 0%,
+    #2563eb 40%,
+    #1e40af 100%
+  );
+  box-shadow:
+    0 4px 12px rgba(37, 99, 235, 0.28),
+    0 0 20px rgba(37, 99, 235, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Make primary utility appear neon for sliders */
+.bg-primary {
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6) !important;
+}
+
+.border-primary {
+  border-color: #8b5cf6 !important;
+}
+
+.focus-visible\:ring-ring {
+  box-shadow: 0 0 6px rgba(139, 92, 246, 0.35);
+}
+
+/* Global page bg/text using theme variables */
+:root {
+  --page-bg: #0f1724 !important;
+  --page-text: #ffffff;
+  --accent-color: #60a5fa;
+  --accent-rgb: 96, 165, 250;
+  --toggle-ring: #60a5fa;
+}
+
+html,
+body,
+#root {
+  background-color: var(--page-bg) !important;
+  color: var(--page-text) !important;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+}
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 187 52% 44%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 267 84% 58%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 267 84% 58%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 267 84% 58%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9% !important;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 267 84% 70%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 267 84% 70%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 267 84% 70%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Roboto font utility */
+  .font-roboto {
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* Pacifico font utility */
+  .font-pacifico {
+    font-family: "Pacifico", cursive;
+  }
+
+  /* Animated logo waves */
+  .ripple-logo .logo-waves .wave {
+    opacity: 0.9;
+  }
+
+  .ripple-logo .w1 {
+    animation: ripple-wave 1s infinite ease-in-out;
+    transform-origin: 12px 6px;
+  }
+
+  .ripple-logo .w2 {
+    animation: ripple-wave 1.2s infinite ease-in-out;
+    transform-origin: 24px 6px;
+  }
+
+  .ripple-logo .w3 {
+    animation: ripple-wave 1.4s infinite ease-in-out;
+    transform-origin: 36px 6px;
+  }
+
+  @keyframes ripple-wave {
+    0% {
+      transform: translateY(0) scaleY(1);
+      opacity: 0.7;
+    }
+
+    50% {
+      transform: translateY(-4px) scaleY(1.25);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(0) scaleY(1);
+      opacity: 0.7;
+    }
+  }
+
+  /* Logo headphone pad fill animation */
+  .ripple-logo .logo-pad-left,
+  .ripple-logo .logo-pad-right {
+    transition: fill 300ms ease;
+  }
+
+  .ripple-logo:hover .logo-pad-left,
+  .ripple-logo:hover .logo-pad-right {
+    fill: #60a5fa;
+  }
+
+  /* Neon equalizer bars (use accent color variable) */
+  .eq-neon {
+    background: linear-gradient(
+      180deg,
+      rgba(var(--accent-rgb), 0.95),
+      rgba(255, 255, 255, 0.08)
+    );
+    box-shadow:
+      0 0 10px rgba(var(--accent-rgb), 0.6),
+      0 0 30px rgba(var(--accent-rgb), 0.14),
+      0 12px 40px rgba(var(--accent-rgb), 0.08);
+    border-radius: 2px;
+    filter: drop-shadow(0 8px 28px rgba(var(--accent-rgb), 0.12));
+  }
+
+  /* Play overlay and button */
+  .card-play-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(var(--accent-rgb), 0.08),
+      rgba(0, 0, 0, 0.6)
+    );
+  }
+
+  /* Dark variant used when page theme is dark */
+  .card-play-overlay-dark {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+  }
+
+  /* Light variant for light theme: light overlay so black play icon remains visible */
+  .card-play-overlay-light {
+    background: rgba(255, 255, 255, 0.92);
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+  }
+
+  .play-btn {
+    background: linear-gradient(
+      90deg,
+      rgba(var(--accent-rgb), 0.12),
+      rgba(255, 255, 255, 0.02)
+    );
+    border: 1px solid rgba(var(--accent-rgb), 0.08);
+    box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.06);
+  }
+
+  /* Selected overlay for library track card */
+  .selected-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  .selected-overlay .check-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 9999px;
+    background: linear-gradient(
+      180deg,
+      rgba(34, 197, 94, 1),
+      rgba(16, 185, 129, 1)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.18);
+  }
+
+  .play-btn:hover {
+    transform: translateY(-2px) scale(1.04);
+  }
+
+  .play-btn {
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  /* Solid 3D-style logo — bold gradient, strong extrusion, tuned for dark mode visibility */
+  .logo-text {
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    /* brighter stops to stand out on dark backgrounds */
+    background-image: linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #7c3aed 40%,
+      #60a5fa 70%,
+      #a78bfa 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    /* Deep carved extrusion with light rim for contrast */
+    text-shadow:
+      0 2px 0 rgba(0, 0, 0, 0.6),
+      0 4px 0 rgba(0, 0, 0, 0.55),
+      0 8px 18px rgba(0, 0, 0, 0.6),
+      0 14px 36px rgba(12, 17, 32, 0.55);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.06);
+    filter: drop-shadow(0 14px 40px rgba(12, 17, 32, 0.6));
+    letter-spacing: -0.5px;
+  }
+
+  /* Improve dark mode specifically so the logo always pops */
+  .dark .logo-text {
+    background-image: linear-gradient(
+      90deg,
+      #f8fafc 0%,
+      #7c3aed 45%,
+      #60a5fa 85%
+    );
+    text-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.7),
+      0 10px 28px rgba(12, 17, 32, 0.6);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.35);
+  }
+
+  /* Light theme variant: maintain color but with lighter stroke */
+  .logo-text-light {
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    background-image: linear-gradient(
+      90deg,
+      #ff7b7b 0%,
+      #ffd07a 35%,
+      #ff9ad1 70%,
+      #9aa8ff 100%
+    );
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    text-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.9),
+      0 6px 14px rgba(0, 0, 0, 0.06);
+    -webkit-text-stroke: 0.6px rgba(255, 255, 255, 0.6);
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.12));
+    letter-spacing: -0.4px;
+  }
+
+  /* Custom volume range (rotated vertical slider) */
+  .volume-range {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    width: 120px;
+    height: 6px;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  .volume-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    /* border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #bfdbfe 0%, #2563eb 40%, #1e40af 100%); */
+    background: linear-gradient(135deg, #facc15, #fbbf24);
+    clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.28);
+    cursor: pointer;
+  }
+
+  .volume-range::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    background: radial-gradient(
+      circle at 30% 30%,
+      #bfdbfe 0%,
+      #2563eb 40%,
+      #1e40af 100%
+    );
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .volume-range-vertical {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 120px;
+    height: 6px;
+    background-image: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    border-radius: 6px;
+    outline: none;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    display: block;
+  }
+
+  .volume-range-vertical::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 8px;
+    background: linear-gradient(135deg, #14fc33, #89f0c6);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.28);
+    border-radius: 2px;
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+
+  .volume-range-vertical::-moz-range-thumb {
+    width: 16px;
+    height: 8px;
+    background: linear-gradient(135deg, #ccc7c4, #cc6529);
+    clip-path: polygon(0 0, 38% 0, 100% 50%, 38% 100%, 0 100%);
+    border-radius: 2px;
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+
+  .player-bottom {
+    backdrop-filter: blur(6px);
+  }
+
+  .nav-mirror {
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    background-clip: padding-box;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .nav-mirror-dark {
+    background: linear-gradient(
+      180deg,
+      rgba(125, 211, 252, 0.04),
+      rgba(125, 211, 252, 0.02)
+    );
+    border: 1px solid rgba(125, 211, 252, 0.06);
+    border-bottom: 3px solid rgba(125, 211, 252, 0.2);
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+  }
+
+  .nav-mirror-light {
+    background: linear-gradient(
+      180deg,
+      rgba(125, 211, 252, 0.1),
+      rgba(125, 211, 252, 0.06)
+    );
+    border: 1px solid rgba(14, 165, 233, 0.12);
+    border-bottom: 3px solid rgba(125, 211, 252, 0.9);
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.06);
+  }
+
+  .player-wave {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 20px;
+    margin-left: 6px;
+  }
+
+  .player-wave span {
+    width: 4px;
+    background: linear-gradient(
+      180deg,
+      rgba(var(--accent-rgb), 0.95),
+      rgba(255, 255, 255, 0.08)
+    );
+    border-radius: 0;
+    box-shadow:
+      0 0 8px rgba(var(--accent-rgb), 0.4),
+      0 6px 20px rgba(var(--accent-rgb), 0.08);
+    animation:
+      neonWave 0.9s infinite ease-in-out,
+      neonColorCycle 4s linear infinite;
+    transform-origin: bottom center;
+  }
+
+  .player-wave span.s1 {
+    animation-duration: 0.85s, 4s;
+  }
+
+  .player-wave span.s2 {
+    animation-duration: 0.95s, 4s;
+  }
+
+  .player-wave span.s3 {
+    animation-duration: 0.75s, 4s;
+  }
+
+  .player-wave span.s4 {
+    animation-duration: 1.05s, 4s;
+  }
+
+  .player-wave span.s5 {
+    animation-duration: 0.9s, 4s;
+  }
+
+  @keyframes neonWave {
+    0% {
+      height: 4px;
+    }
+
+    50% {
+      height: 32px;
+    }
+
+    100% {
+      height: 4px;
+    }
+  }
+
+  /* New slider styles */
+  .custom-slider-track {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .custom-slider-range {
+    background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.18);
+  }
+
+  .custom-slider-thumb {
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  }
+
+  .slider-tooltip {
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+
+  .custom-slider-vertical .custom-slider-track {
+    width: 8px;
+  }
+
+  /* Light mode should use the CSS variables defined in :root for colors.
+     Previously a global grayscale filter was applied which desaturated all UI colors
+     (including icons and cards). Removed that filter so light mode shows intended colors
+     based on the variables above. */
+
+  /* Compact player styles */
+  .compact-player .track-title {
+    font-weight: 700;
+  }
+
+  .compact-player .track-artist {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+  }
+
+  .compact-volume {
+    width: 100px;
+  }
+
+  .animate-eqb1 {
+    animation:
+      eqb1 0.9s infinite ease-in-out,
+      neonColorCycle 4s linear infinite;
+  }
+
+  .animate-eqb2 {
+    animation:
+      eqb2 1s infinite ease-in-out,
+      neonColorCycle 4s linear infinite;
+  }
+
+  .animate-eqb3 {
+    animation:
+      eqb3 0.85s infinite ease-in-out,
+      neonColorCycle 4s linear infinite;
+  }
+
+  .animate-eqb4 {
+    animation:
+      eqb4 0.95s infinite ease-in-out,
+      neonColorCycle 4s linear infinite;
+  }
+
+  .animate-eqb5 {
+    animation:
+      eqb5 1.05s infinite ease-in-out,
+      neonColorCycle 4s linear infinite;
+  }
+
+  /* Navbar nav arrow buttons */
+  .nav-arrow-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  /* 3D gradient sidebar/nav backgrounds */
+  .bg-3d-sidebar-dark {
+    background: linear-gradient(
+      180deg,
+      rgba(15, 23, 36, 0.95) 0%,
+      rgba(6, 10, 18, 0.95) 100%
+    );
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.02),
+      6px 0 18px rgba(2, 6, 23, 0.6);
+    background-image: linear-gradient(
+      145deg,
+      rgba(17, 24, 39, 1) 0%,
+      rgba(8, 11, 20, 1) 50%,
+      rgba(21, 27, 38, 1) 100%
+    );
+  }
+
+  .bg-3d-sidebar-light {
+    background-image: linear-gradient(
+      145deg,
+      #f8fafc 0%,
+      #eef6ff 50%,
+      #e6eefc 100%
+    );
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.6),
+      6px 0 18px rgba(14, 42, 80, 0.06);
+  }
+
+  .nav-3d-dark {
+    background-image: linear-gradient(
+      180deg,
+      rgba(8, 12, 20, 0.9) 0%,
+      rgba(10, 14, 24, 0.95) 100%
+    );
+    box-shadow: 0 4px 18px rgba(2, 6, 23, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .nav-3d-light {
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(242, 248, 255, 0.98) 100%
+    );
+    box-shadow: 0 6px 24px rgba(100, 116, 139, 0.08);
+    border-bottom: 1px solid rgba(16, 24, 40, 0.04);
+  }
+
+  /* Neon switch and ring utilities */
+  .neon-switch-dark {
+    /* Track uses accent color -> white */
+    background: linear-gradient(90deg, var(--accent-color) 50%, #ffffff 100%);
+    box-shadow:
+      0 0 12px rgba(var(--accent-rgb), 0.28),
+      0 0 36px rgba(var(--accent-rgb), 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  }
+
+  .neon-switch-light {
+    /* Blue -> Purple track for the light theme toggle */
+    background: linear-gradient(90deg, #facc15 0%, #f97316 100%);
+    box-shadow:
+      0 0 12px rgba(250, 204, 21, 0.3),
+      0 0 28px rgba(249, 115, 22, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  }
+
+  .neon-ring {
+    box-shadow:
+      0 0 8px rgba(96, 165, 250, 0.35),
+      0 0 24px rgba(59, 130, 246, 0.12);
+    transition: box-shadow 180ms ease;
+  }
+
+  .neon-ring-light {
+    box-shadow:
+      0 0 6px rgba(59, 130, 246, 0.12),
+      0 0 18px rgba(96, 165, 250, 0.06);
+    transition: box-shadow 180ms ease;
+  }
+
+  /* Navbar/menu neon button focus */
+  .neon-focus:focus {
+    box-shadow:
+      0 0 12px rgba(96, 165, 250, 0.35),
+      0 0 36px rgba(59, 130, 246, 0.12);
+    outline: none;
+  }
+
+  /* Toggle outer ring fallback */
+  .toggle-outer-ring {
+    box-shadow:
+      0 0 6px rgba(96, 165, 250, 0.22),
+      0 0 18px rgba(59, 130, 246, 0.08);
+    border-radius: 9999px;
+    transition: box-shadow 160ms ease;
+  }
+}
