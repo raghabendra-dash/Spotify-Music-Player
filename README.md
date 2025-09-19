@@ -1,4 +1,4 @@
-# <img width="90" height="50" alt="Ripple Logo" src="https://m.media-amazon.com/images/I/51WV8VR3I3L._UF1000,1000_QL80_.jpg" />Ripple: Online Music Streaming Platform   
+# <img width="50" height="40" alt="Ripple Logo" src="https://cdn-icons-png.flaticon.com/128/1949/1949969.png" /> Ripple: Online Music Streaming Platform   
 Ripple is a modern, production-ready **online music streaming web application** that delivers a seamless listening experience with a clean and intuitive user interface. Built with **React Redux**, **TypeScript**, **Vite**, and **Tailwind CSS** and powered by **Firebase** for authentication and cloud storage, MusicMania combines cutting-edge web technologies with real-world music streaming features.  
 
 The platform provides users with the ability to **stream songs, explore genres, book live concerts of their favorite singers and manage personal libraries**, all while enjoying a smooth, responsive and reliable performance across devices.  
