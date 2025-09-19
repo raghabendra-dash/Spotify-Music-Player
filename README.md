@@ -1,4 +1,4 @@
-# <img width="50" height="40" alt="Ripple Logo" src="https://cdn-icons-png.flaticon.com/128/1949/1949969.png" /> Ripple: Online Music Streaming Platform   
+## <img width="50" height="40" alt="Ripple Logo" src="https://cdn-icons-png.flaticon.com/128/1949/1949969.png" /> Ripple: Online Music Streaming Platform   
 Ripple is a modern, production-ready **online music streaming web application** that delivers a seamless listening experience with a clean and intuitive user interface. Built with **React Redux**, **TypeScript**, **Vite**, and **Tailwind CSS** and powered by **Firebase** for authentication and cloud storage, MusicMania combines cutting-edge web technologies with real-world music streaming features.  
 
 The platform provides users with the ability to **stream songs, explore genres, book live concerts of their favorite singers and manage personal libraries**, all while enjoying a smooth, responsive and reliable performance across devices.  
@@ -9,7 +9,7 @@ Whether you’re a music lover exploring playlists or a developer looking for a 
 
 ---
 
-## ✨ Features  
+### ✨ Features  
 
 - ▶ **Stream Songs** – Play music online with high-quality streaming.  
 - 💽 **Discover Genres** – Browse and explore songs by categories like Pop, Rock, Jazz, Classical, etc.  
@@ -24,7 +24,7 @@ Whether you’re a music lover exploring playlists or a developer looking for a 
 
 ---
 
-## 📸 Screenshots    
+### 📸 Screenshots    
 
 ### 📀 Home Page  
 ![Home Page](screenshots/home.png)  
@@ -40,7 +40,7 @@ Whether you’re a music lover exploring playlists or a developer looking for a 
 
 ---
 
-## 🚀 Tech Stack  
+### 🚀 Tech Stack  
 
 - **Frontend:** React 18, TypeScript, Vite, Tailwind CSS  
 - **Backend / Cloud:** Firebase Authentication & Firestore  
@@ -49,7 +49,7 @@ Whether you’re a music lover exploring playlists or a developer looking for a 
 
 ---
 
-## ⚙ Installation
+### ⚙ Installation
 
 1. Clone the repository
  
@@ -68,7 +68,7 @@ Whether you’re a music lover exploring playlists or a developer looking for a 
  npm run dev
  ```
 
-## 💼 Business Value
+### 💼 Business Value
 
  Ripple is not just a streaming app – it’s a scalable digital product with real business impact:
 
@@ -84,10 +84,10 @@ Whether you’re a music lover exploring playlists or a developer looking for a 
 
 - 🌍 Global Scalability – Cloud-first architecture allows deployment for a large user base without performance issues.
 
-## 🤝 Contributing
+### 🤝 Contributing
 
 Contributions are welcome! Please fork the repo and submit a pull request with your changes.
 
-## 📜 License
+### 📜 License
 
  This project is licensed under the MIT License.
