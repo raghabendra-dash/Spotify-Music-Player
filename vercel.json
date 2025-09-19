@@ -1,16 +1,15 @@
 {
+  "version": 2,
   "builds": [
-    {
-      "src": "dist/server/node-build.mjs",
-      "use": "@vercel/node"
-    },
     {
       "src": "dist/spa/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/dist/server/node-build.mjs" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }
