@@ -7,9 +7,7 @@ export default function LiveConcertSection() {
   return (
     <div
       className="relative rounded-lg overflow-hidden h-64 bg-cover bg-center flex items-center justify-center p-8 text-white mb-8"
-      style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
-      }}
+      style={{ backgroundImage: `url('/Live-concert.jpg')` }}
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
 

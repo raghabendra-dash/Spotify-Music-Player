@@ -94,7 +94,7 @@ const ConcertsPage = () => {
     return (
       <div
         className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-white p-4 sm:p-6 md:p-8"
-        style={{ backgroundImage: "url('/lightco.jpg')" }}
+        style={{ backgroundImage: "url('/lightco.jpeg')" }}
       >
         <div className="max-w-2xl mx-auto bg-black/60 backdrop-blur-sm p-8 rounded-xl drop-shadow-2xl border border-purple-800">
           <div className="text-center">
