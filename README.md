@@ -29,16 +29,16 @@ Whether you’re a music lover exploring playlists or a developer looking for a 
 ### 📸 Screenshots    
 
 ### 📀 Home Page  
-![Home Page](screenshots/home.png)  
+![Home Page](public/home.png)  
 
 ### ⏯ Genres & Playlists  
-![Genres](screenshots/genres.png)  
+![Genres](public/playlist.png)  
 
 ### 🧑‍🎤 Concert Booking Page  
-![Live Concert Booking](screenshots/concert-booking.png)  
+![Live Concert Booking](public/concert-booking.png)  
 
 ### 📁 Search Library  
-![Search](screenshots/library.png)  
+![Search](public/search-library.png)  
 
 ---
 
