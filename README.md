@@ -8,6 +8,8 @@ With features like **dark/light mode**, **offline support** and a modular **comp
 Whether you’re a music lover exploring playlists or a developer looking for a robust streaming app boilerplate, Ripple is built to impress.  
 
 ---
+> Website Live: [Click here](https://musicmania-7dplxa9y8-raghabendra-dash-projects.vercel.app/)
+---
 
 ### ✨ Features  
 
