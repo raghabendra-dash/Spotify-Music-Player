@@ -35,10 +35,10 @@ Whether you’re a music lover exploring playlists or a developer looking for a 
 ![Genres](screenshots/genres.png)  
 
 ### 🧑‍🎤 Concert Booking Page  
-![Concert Booking](screenshots/concert-booking.png)  
+![Live Concert Booking](screenshots/concert-booking.png)  
 
-### 📁 Personal Library  
-![Library](screenshots/library.png)  
+### 📁 Search Library  
+![Search](screenshots/library.png)  
 
 ---
 
